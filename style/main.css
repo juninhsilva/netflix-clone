@@ -1,0 +1,129 @@
+:root{
+    --red: #e50914;
+    --black: #141414;
+    --white: #fee;
+    --gray: #aaa;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 16px;
+}
+
+body{
+    background-color: var(--black);
+    font-family: 'Times New Roman', Times, serif;
+    color: var(--white);
+}
+
+header .container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo{
+   color:var(--red);
+   font-family: 'Arial Black', 'Times New Roman', Times, serif;
+   font-size: 40px;
+}
+
+header nav a{
+    text-decoration: none;
+    color: var(--gray);
+    margin-right: 10px;
+}
+
+header nav a:hover{
+    color: var(--white);
+}
+
+.container{
+    padding: 10px;
+}
+
+.principal{
+    font-size: 16px;
+    background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)100%),
+    url('../img/capa-house.jpg');
+    height: 400px;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+}
+
+.principal .container{
+    width: 60%;
+}
+
+.button{
+    background-color: rgba(0, 0, 0, .5);
+    color: var(--white);
+    border: none;
+    padding: 5px 40px;
+    margin: 5px;
+    transition: .3s ease all;
+}
+
+.button i{
+    margin-right: 5px;
+}
+
+.button:hover{
+    color: var(--red);
+    background-color: rgba(0, 0, 0, .25);
+    cursor: pointer;
+}
+.principal .title{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 24px;
+}
+
+.principal .sinopse{
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+.carousel-films{
+    margin-top: 10px;
+}
+
+.film-box{
+    height: 100%;
+    width: 100%;
+    display: block;
+
+}
+
+.film-box:hover{
+    height : 120%;
+    width: 120%;
+}
+
+@media screen and (max-width: 640px){
+    header .container{
+        display: flex;
+        flex-direction: column;
+    }
+    .button{
+        margin-top: 5px;
+        width: 190px;
+        height: 40px;
+    }
+}
+
+@media screen and (min-width: 1000px){
+    .sinopse{
+        width: 50%;
+    }
+}
